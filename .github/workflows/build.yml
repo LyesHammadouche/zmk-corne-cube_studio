@@ -13,6 +13,7 @@ on:
 jobs:
   sync-keymap:
     runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
     outputs:
       changed: ${{ steps.check.outputs.changed }}
     steps:
@@ -38,5 +39,5 @@ jobs:
 
   build:
     needs: sync-keymap
-    if: always()
+    if: always() && github.actor != 'github-actions[bot]'
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3.0
