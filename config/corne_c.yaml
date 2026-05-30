@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne_c}
 layers:
   '0':
-  - ESC
+  - ESCAPE
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - BSPC
-  - {t: TAB, h: LEFT SHIFT}
+  - {t: TAB, h: LSHFT}
   - A
   - S
   - D
@@ -47,7 +47,7 @@ layers:
   - F1
   - F2
   - F3
-  - {t: F4, h: Alt+F4}
+  - F4
   - F5
   - F6
   - F7
@@ -69,8 +69,8 @@ layers:
   - '-'
   - '='
   - '?'
-  - {t: (, h: '['}
-  - {t: ), h: ']'}
+  - (
+  - )
   - '@'
   - '~'
   - \
@@ -82,10 +82,10 @@ layers:
   - '!'
   - {t: ▽, type: trans}
   - LCTRL
-  - LEFT SHIFT
+  - LSHFT
   - {t: ▽, type: trans}
   - RET
-  - RIGHT ALT
+  - RALT
   '2':
   - INSERT
   - HOME
@@ -112,7 +112,7 @@ layers:
   - '>'
   - '%'
   - PRINTSCREEN
-  - LEFT SHIFT
+  - LSHFT
   - LCTRL
   - Sft+-
   - (
@@ -123,7 +123,7 @@ layers:
   - '-'
   - +
   - '*'
-  - LEFT SHIFT
+  - LSHFT
   - LCTRL
   - {t: ▽, type: trans}
   - KP 0
@@ -172,8 +172,8 @@ layers:
   - ENTER
   - RET
   - ''
-  '4': [TAB, Q, W, E, R, T, '1', '2', '3', '4', '5', ESC, LSHFT, A, S, D, F, G, '6', '7', '8', '9', '0', RIGHT SHIFT, LCTRL, Z, X, C, V, B, Y, H, N, J, '', RCTRL,
-    LALT, SPACE, ENTER, ESC, CAPSLOCK, RIGHT ALT]
+  '4': [TAB, Q, W, E, R, T, '1', '2', '3', '4', '5', ESC, LSHFT, A, S, D, F, G, '6', '7', '8', '9', '0', RSHFT, LCTRL, Z, X, C, V, B, Y, H, N, J, '', RCTRL, LALT,
+    SPACE, ENTER, ESC, CAPSLOCK, RALT]
 combos:
 - p: [3, 4]
   k: X
