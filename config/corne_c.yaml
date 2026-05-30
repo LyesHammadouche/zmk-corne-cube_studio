@@ -1,59 +1,4 @@
-combos:
-- k: X
-  l:
-  - '0'
-  p:
-  - 3
-  - 4
-- k: C
-  l:
-  - '0'
-  p:
-  - 15
-  - 16
-- k: V
-  l:
-  - '0'
-  p:
-  - 17
-  - 16
-- k: CLCK
-  l:
-  - '0'
-  p:
-  - 0
-  - 11
-- k: '&caps_word'
-  l:
-  - '0'
-  p:
-  - 29
-  - 30
-- k:
-    h: toggle
-    t: '3'
-  l:
-  - '0'
-  - '1'
-  - '2'
-  p:
-  - 9
-  - 10
-  - 11
-- k:
-    h: toggle
-    t: '4'
-  l:
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  p:
-  - 5
-  - 17
-  - 18
-  - 6
+layout: {zmk_keyboard: corne_c}
 layers:
   '0':
   - ESCAPE
@@ -68,8 +13,7 @@ layers:
   - O
   - P
   - BSPC
-  - h: LSHFT
-    t: TAB
+  - {t: TAB, h: LSHFT}
   - A
   - S
   - D
@@ -136,11 +80,10 @@ layers:
   - ''''
   - ','
   - '!'
-  - type: held
-  - LCTRL
+  - {t: ▽, type: trans}
+  - {t: LCTRL, type: held}
   - LSHFT
-  - t: ▽
-    type: trans
+  - {t: ▽, type: trans}
   - RET
   - RALT
   '2':
@@ -150,8 +93,7 @@ layers:
   - $
   - Alt+{
   - Alt+}
-  - h: KP NUMLOCK
-    t: KP 7
+  - {t: KP 7, h: KP NUMLOCK}
   - KP 8
   - KP 9
   - /
@@ -183,11 +125,10 @@ layers:
   - '*'
   - LSHFT
   - LCTRL
-  - t: ▽
-    type: trans
+  - {t: ▽, type: trans}
   - KP 0
-  - KP DOT
-  - type: held
+  - {t: KP DOT, type: held}
+  - {t: ▽, type: trans}
   '3':
   - ''
   - OUT TOG
@@ -227,53 +168,31 @@ layers:
   - RSHFT
   - ''
   - ''
-  - t: ▽
-    type: trans
+  - {t: ▽, type: trans}
   - ENTER
   - RET
   - ''
-  '4':
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - ESC
-  - LSHFT
-  - A
-  - S
-  - D
-  - F
-  - G
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - RSHFT
-  - LCTRL
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - Y
-  - H
-  - N
-  - J
-  - ''
-  - RCTRL
-  - LALT
-  - SPACE
-  - ENTER
-  - ESC
-  - CAPSLOCK
-  - RALT
-layout:
-  zmk_keyboard: corne_c
+  '4': [TAB, Q, W, E, R, T, '1', '2', '3', '4', '5', ESC, LSHFT, A, S, D, F, G, '6', '7', '8', '9', '0', RSHFT, LCTRL, Z, X, C, V, B, Y, H, N, J, '', RCTRL, LALT,
+    SPACE, ENTER, ESC, CAPSLOCK, RALT]
+combos:
+- p: [3, 4]
+  k: X
+  l: ['0']
+- p: [15, 16]
+  k: C
+  l: ['0']
+- p: [17, 16]
+  k: V
+  l: ['0']
+- p: [0, 11]
+  k: CLCK
+  l: ['0']
+- p: [29, 30]
+  k: '&caps_word'
+  l: ['0']
+- p: [9, 10, 11]
+  k: {t: '3', h: toggle}
+  l: ['0', '1', '2']
+- p: [5, 17, 18, 6]
+  k: {t: '4', h: toggle}
+  l: ['0', '1', '2', '3', '4']
