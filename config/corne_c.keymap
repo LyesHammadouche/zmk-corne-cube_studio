@@ -11,6 +11,13 @@
             tapping-term-ms = <200>;
             bindings = <&kp LALT>, <&kp LGUI>;
         };
+
+        l2_nav: l2_nav {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 2>, <&mo 3>;
+        };
     };
 
     combos {
@@ -55,7 +62,7 @@
             timeout-ms = <40>;
             bindings = <&tog 3>;
             key-positions = <9 10 11>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
         Gamemod_toggle {
@@ -76,7 +83,7 @@
 &kp ESCAPE   &kp Q  &kp W  &kp E  &kp R       &kp T        &kp Y      &kp U      &kp I    &kp O    &kp P     &kp BSPC
 &mt LSHFT TAB &kp A  &kp S  &kp D  &kp F       &kp G        &kp H      &kp J      &kp K    &kp L    &kp SEMI  &kp RSHFT
 &kp LCTRL    &kp Z  &kp X  &kp C  &kp V       &kp B        &kp N      &kp M      &kp SQT  &kp DOT  &kp FSLH  &kp DEL
-                             &lalt_lgui  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp RCTRL
+                             &lalt_lgui  &mo 1  &kp SPACE    &kp ENTER  &l2_nav  &kp RCTRL
             >;
         };
 
@@ -103,9 +110,9 @@
         nav_layer {
             label = "3";
             bindings = <
-&none      &out OUT_TOG  &none       &none         &none         &none         &none      &none      &kp UP     &none      &none     &none
-&none      &kp LGUI      &kp C_PREV  &kp C_PP      &kp C_NEXT    &none         &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp INS   &none
-&kp LSHFT  &bt BT_PRV    &bt BT_NXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp SLCK  &kp RSHFT
+&none      &out OUT_TOG  &none       &none         &none         &none         &none      &none      &kp UP     &kp BSPC   &kp DEL    &none
+&none      &kp LGUI      &kp C_PREV  &kp C_PP      &kp C_NEXT    &none         &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp INS    &none
+&kp LSHFT  &bt BT_PRV    &bt BT_NXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp SLCK   &kp RSHFT
                                      &none         &none         &trans        &kp ENTER  &kp RET    &none
             >;
         };
