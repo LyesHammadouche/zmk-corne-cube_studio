@@ -75,6 +75,7 @@
         // Layer 0 -- QWERTY (base)
 
         default_layer {
+            label = "0";
             bindings = <
 &kp ESC             &kp Q  &kp W  &kp E  &kp R       &kp T        &kp Y      &kp U      &kp I    &kp O    &kp P     &kp BSPC
 &mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D  &kp F       &kp G        &kp H      &kp J      &kp K    &kp L    &kp SEMI  &kp RSHFT
@@ -84,6 +85,7 @@
         };
 
         num_layer {
+            label = "1";
             bindings = <
 &kp F1        &kp F2                             &kp F3                               &mt LA(F4) F4  &kp F5        &kp F6            &kp F7     &kp F8     &kp F9         &kp F10  &kp F11    &kp PRINTSCREEN
 &kp N0        &kp NUMBER_1                       &kp NUMBER_2                         &kp NUMBER_3   &kp NUMBER_4  &kp N5            &kp N6     &kp N7     &kp N8         &kp N9   &kp MINUS  &kp EQUAL
@@ -93,6 +95,7 @@
         };
 
         fr_accents_signs {
+            label = "2";
             bindings = <
 &kp INSERT       &kp HOME        &kp PAGE_UP    &kp DLLR        &kp LA(LEFT_BRACE)  &kp LA(RIGHT_BRACE)    &mt KP_NUMLOCK KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp FSLH   &kp BSLH  &kp ESC
 &kp DEL          &kp END         &kp PAGE_DOWN  &kp HASH        &kp LBKT            &kp RBKT               &kp KP_NUMBER_4             &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LT     &kp GT    &kp PRCNT
@@ -102,6 +105,7 @@
         };
 
         nav_layer {
+            label = "3";
             bindings = <
 &none      &out OUT_TOG  &none       &none         &none         &none         &none      &none      &kp UP     &none      &none     &none
 &none      &kp LGUI      &kp C_PREV  &kp C_PP      &kp C_NEXT    &none         &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp INS   &none
@@ -111,6 +115,7 @@
         };
 
         game_mod {
+            label = "4";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T        &kp N1   &kp N2        &kp N3         &kp N4  &kp N5  &kp ESC
 &kp LSHFT  &kp A  &kp S  &kp D     &kp F      &kp G        &kp N6   &kp N7        &kp N8         &kp N9  &kp N0  &kp RIGHT_SHIFT
