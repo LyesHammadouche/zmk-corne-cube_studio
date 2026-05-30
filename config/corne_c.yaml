@@ -174,6 +174,49 @@ layers:
   - ''
   '4': [TAB, Q, W, E, R, T, '1', '2', '3', '4', '5', ESC, LSHFT, A, S, D, F, G, '6', '7', '8', '9', '0', RSHFT, LCTRL, Z, X, C, V, B, Y, H, N, J, '', RCTRL, LALT,
     SPACE, ENTER, ESC, CAPSLOCK, RALT]
+  '5':
+  - ESCAPE
+  - A
+  - Z
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - {t: TAB, h: LSHFT}
+  - Q
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - M
+  - RSHFT
+  - LCTRL
+  - W
+  - X
+  - C
+  - V
+  - B
+  - N
+  - ','
+  - ''''
+  - .
+  - /
+  - DEL
+  - '&lalt_lgui'
+  - '1'
+  - SPACE
+  - ENTER
+  - '&l2_nav'
+  - RCTRL
 combos:
 - p: [3, 4]
   k: X
@@ -196,3 +239,6 @@ combos:
 - p: [5, 17, 18, 6]
   k: {t: '4', h: toggle}
   l: ['0', '1', '2', '3', '4']
+- p: [0, 12, 26, 38]
+  k: {t: '5', h: toggle}
+  l: ['0', '1', '2', '3', '4', '5']
