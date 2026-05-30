@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - DEL
-  - {t: '1', h: toggle}
+  - '1'
   - '&lalt_lgui'
   - SPACE
   - ENTER
   - RCTRL
-  - {t: '2', h: toggle}
+  - '2'
   '1':
   - F1
   - F2
@@ -80,7 +80,7 @@ layers:
   - ''''
   - ','
   - '!'
-  - {t: ▽, type: trans}
+  - {type: held}
   - LCTRL
   - LSHFT
   - {t: ▽, type: trans}
@@ -128,7 +128,7 @@ layers:
   - {t: ▽, type: trans}
   - KP 0
   - KP DOT
-  - {t: ▽, type: trans}
+  - {type: held}
   '3':
   - ''
   - OUT TOG
