@@ -67,12 +67,12 @@ layers:
   - '8'
   - '9'
   - '-'
-  - '='
+  - {t: ▽, type: trans}
   - '?'
   - (
   - )
-  - '@'
-  - '~'
+  - '|'
+  - /
   - \
   - '`'
   - ^
@@ -89,8 +89,8 @@ layers:
   '2':
   - INSERT
   - HOME
-  - '&'
-  - $
+  - PG UP
+  - ''
   - '{'
   - '}'
   - KP 7
@@ -101,8 +101,8 @@ layers:
   - {t: ▽, type: trans}
   - DEL
   - END
-  - '@'
-  - _
+  - PAGE DOWN
+  - ''
   - '['
   - ']'
   - KP 4
@@ -110,11 +110,11 @@ layers:
   - KP 6
   - <
   - '>'
-  - '%'
+  - {t: ▽, type: trans}
   - PRINTSCREEN
   - LSHFT
   - LEFT CONTROL
-  - '#'
+  - ''
   - (
   - )
   - KP 1
@@ -122,7 +122,7 @@ layers:
   - KP 3
   - '-'
   - +
-  - '*'
+  - {t: ▽, type: trans}
   - LSHFT
   - LCTRL
   - LOCKING NUM
