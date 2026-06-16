@@ -6,28 +6,28 @@ layers:
   - W
   - {t: '&e_td', h: '&'}
   - R
-  - T
-  - Y
+  - {t: T, h: '~'}
+  - {t: Y, h: '&macro_yen'}
   - U
   - I
   - O
-  - P
+  - {t: P, h: '%'}
   - BSPC
   - {t: TAB, h: LSHFT}
   - {t: '&a_td', h: '@'}
   - S
-  - D
+  - {t: D, h: '#'}
   - F
   - G
   - H
   - J
   - K
   - L
-  - '&apo_td'
+  - {t: '&apo_td', s: Sft+;}
   - RSHFT
   - LCTRL
   - {t: Z, h: '&macro_tifinagh_z'}
-  - X
+  - {t: X, h: '*'}
   - {t: '&c_td', h: '&macro_dotcom'}
   - V
   - B
