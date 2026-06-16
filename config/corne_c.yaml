@@ -90,8 +90,8 @@ layers:
   - INSERT
   - HOME
   - PG UP
-  - ''
-  - '{'
+  - UP ARROW
+  - PAGE DOWN
   - '}'
   - KP 7
   - KP 8
@@ -101,10 +101,10 @@ layers:
   - {t: ▽, type: trans}
   - DEL
   - END
-  - PAGE DOWN
-  - ''
-  - '['
-  - ']'
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - '{'
   - KP 4
   - KP 5
   - KP 6
@@ -115,16 +115,16 @@ layers:
   - LSHFT
   - LEFT CONTROL
   - ''
-  - (
-  - )
+  - '['
+  - ']'
   - KP 1
   - KP 2
   - KP 3
   - '-'
   - +
   - {t: ▽, type: trans}
-  - LSHFT
-  - LCTRL
+  - {t: ▽, type: trans}
+  - ''
   - LOCKING NUM
   - KP 0
   - {t: ▽, type: trans}
