@@ -4,7 +4,7 @@ layers:
   - ESCAPE
   - Q
   - W
-  - '&e_behavior'
+  - '&e_behavior AMPERSAND'
   - R
   - T
   - Y
@@ -14,7 +14,7 @@ layers:
   - P
   - BSPC
   - {t: TAB, h: LSHFT}
-  - '&a_behavior'
+  - '&a_behavior AT_SIGN'
   - S
   - D
   - F
@@ -23,10 +23,10 @@ layers:
   - J
   - K
   - L
-  - {t: '&apo_td', s: Sft+;}
+  - '&apo_td'
   - RSHFT
   - LCTRL
-  - '&z_behavior'
+  - '&z_behavior Z'
   - X
   - '&c_behavior'
   - V
@@ -35,7 +35,7 @@ layers:
   - M
   - ','
   - .
-  - '&slash_behavior'
+  - '&slash_behavior BSLH'
   - DEL
   - '&lalt_lgui'
   - '1'
