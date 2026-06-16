@@ -4,7 +4,7 @@ layers:
   - ESCAPE
   - Q
   - W
-  - E
+  - '&e_behavior'
   - R
   - T
   - Y
@@ -14,7 +14,7 @@ layers:
   - P
   - BSPC
   - {t: TAB, h: LSHFT}
-  - A
+  - '&a_behavior'
   - S
   - D
   - F
@@ -23,19 +23,19 @@ layers:
   - J
   - K
   - L
-  - ;
+  - {t: '&apo_td', s: Sft+;}
   - RSHFT
   - LCTRL
-  - Z
+  - '&z_behavior'
   - X
-  - C
+  - '&c_behavior'
   - V
   - B
   - N
   - M
-  - ''''
+  - ','
   - .
-  - /
+  - '&slash_behavior'
   - DEL
   - '&lalt_lgui'
   - '1'
@@ -55,7 +55,7 @@ layers:
   - F9
   - F10
   - F11
-  - PRINTSCREEN
+  - DEL
   - '0'
   - '1'
   - '2'
@@ -78,7 +78,7 @@ layers:
   - ^
   - Sft+'
   - ''''
-  - ','
+  - _
   - '!'
   - LEFT ALT
   - {type: held}
@@ -89,20 +89,20 @@ layers:
   '2':
   - INSERT
   - HOME
-  - PAGE UP
+  - '&'
   - $
-  - Alt+{
-  - Alt+}
+  - '{'
+  - '}'
   - KP 7
   - KP 8
   - KP 9
   - /
   - \
-  - ESC
+  - {t: ▽, type: trans}
   - DEL
   - END
-  - PAGE DOWN
-  - '#'
+  - '@'
+  - _
   - '['
   - ']'
   - KP 4
@@ -113,8 +113,8 @@ layers:
   - '%'
   - PRINTSCREEN
   - LSHFT
-  - LCTRL
-  - Sft+-
+  - LEFT CONTROL
+  - '#'
   - (
   - )
   - KP 1
@@ -130,47 +130,47 @@ layers:
   - {t: ▽, type: trans}
   - KP DOT
   '3':
-  - ''
+  - {t: ▽, type: trans}
   - OUT TOG
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Ctl+LEFT
+  - Ctl+RIGHT
+  - Gui+LEFT
+  - Gui+RIGHT
+  - PAGE DOWN
+  - DEL
   - UP
   - BSPC
-  - DEL
-  - ''
-  - ''
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LGUI
   - PREV
   - PP
   - NEXT
-  - ''
-  - ''
+  - ESCAPE
+  - SCROLLLOCK
   - LEFT
   - DOWN
   - RIGHT
-  - INS
   - ''
+  - {t: ▽, type: trans}
   - LSHFT
   - BT PRV
   - BT NXT
   - VOL DN
   - VOL UP
   - MUTE
+  - ''
   - HOME
-  - PG DN
-  - PG UP
+  - INS
   - END
-  - SLCK
+  - '~'
   - RSHFT
-  - ''
-  - ''
+  - LCTRL
+  - LEFT ALT
   - {t: ▽, type: trans}
   - ENTER
-  - RET
+  - {t: ▽, type: trans}
   - ''
   '4': [TAB, Q, W, E, R, T, '1', '2', '3', '4', '5', ESC, LSHFT, A, S, D, F, G, '6', '7', '8', '9', '0', RSHFT, LCTRL, Z, X, C, V, B, Y, H, N, J, '', RCTRL, LALT,
     SPACE, ENTER, ESC, CAPSLOCK, RALT]
@@ -241,4 +241,10 @@ combos:
   l: ['0']
 - p: [6, 7, 8, 21]
   k: '&bootloader'
+  l: ['0']
+- p: [3, 4]
+  k: COPY
+  l: ['0']
+- p: [16, 15]
+  k: PASTE
   l: ['0']
