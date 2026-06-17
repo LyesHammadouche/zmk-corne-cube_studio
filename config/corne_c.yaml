@@ -13,7 +13,7 @@ layers:
   - O
   - {t: P, h: '%'}
   - BSPC
-  - {t: TAB, h: LSHFT}
+  - LSHFT
   - {t: '&a_td', h: '@'}
   - {t: S, h: $}
   - {t: D, h: '#'}
@@ -37,8 +37,8 @@ layers:
   - .
   - {t: '&slash_td', h: \}
   - DEL
-  - '&lalt_lgui'
-  - '1'
+  - LALT
+  - '&mo1_gui'
   - SPACE
   - ENTER
   - '&l2_nav'
@@ -81,7 +81,7 @@ layers:
   - _
   - '!'
   - LEFT ALT
-  - {type: held}
+  - {t: ▽, type: trans}
   - LSHFT
   - DELETE
   - RET
@@ -114,7 +114,7 @@ layers:
   - PRINTSCREEN
   - LSHFT
   - LEFT CONTROL
-  - ''
+  - REPEAT
   - '['
   - ']'
   - KP 1
@@ -124,7 +124,7 @@ layers:
   - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - _
   - LOCKING NUM
   - KP 0
   - {t: ▽, type: trans}
@@ -152,7 +152,7 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - ''
+  - '`'
   - {t: ▽, type: trans}
   - LSHFT
   - BT PRV
@@ -160,7 +160,7 @@ layers:
   - VOL DN
   - VOL UP
   - MUTE
-  - ''
+  - INS
   - HOME
   - INS
   - END
@@ -171,52 +171,11 @@ layers:
   - {t: ▽, type: trans}
   - ENTER
   - {t: ▽, type: trans}
-  - ''
+  - '`'
   '4': [TAB, Q, W, E, R, T, '1', '2', '3', '4', '5', ESC, LSHFT, A, S, D, F, G, '6', '7', '8', '9', '0', RSHFT, LCTRL, Z, X, C, V, B, Y, H, N, J, '', RCTRL, LALT,
     SPACE, ENTER, ESC, CAPSLOCK, RALT]
-  '5':
-  - ESCAPE
-  - A
-  - Z
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - BSPC
-  - {t: TAB, h: LSHFT}
-  - Q
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - M
-  - RSHFT
-  - LCTRL
-  - W
-  - X
-  - C
-  - V
-  - B
-  - N
-  - ','
-  - ''''
-  - .
-  - /
-  - DEL
-  - '&lalt_lgui'
-  - '1'
-  - SPACE
-  - ENTER
-  - '&l2_nav'
-  - RCTRL
+  '5': [ESCAPE, A, Z, E, R, T, Y, U, I, O, P, BSPC, LSHFT, Q, S, D, F, G, H, J, K, L, M, RSHFT, LCTRL, W, X, C, V, B, N, ',', '''', ., /, DEL, LALT, '&mo1_gui', SPACE,
+    ENTER, '&l2_nav', RCTRL]
 combos:
 - p: [0, 11]
   k: CLCK
@@ -248,3 +207,9 @@ combos:
 - p: [16, 15]
   k: PASTE
   l: ['0']
+- p: [18, 6, 7]
+  k: Alt+TAB
+  l: ['0', '5']
+- p: [6, 7]
+  k: TAB
+  l: ['0', '5']
